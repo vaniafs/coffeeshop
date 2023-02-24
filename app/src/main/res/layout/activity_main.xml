@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/ijo"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="412dp"
+        android:layout_height="510dp"
+        android:background="@drawable/custom_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="300dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/loginAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/coklat"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="346dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:elevation="3dp"
+        android:hint="Username"
+        android:textColorHint="@color/coklat"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="421dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:background="@drawable/customedittext"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:hint="Password"
+        android:textColorHint="@color/coklat"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="481dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/coklat"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="561dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_btn"
+        android:elevation="3dp"
+        android:text="Login"
+        android:textColor="@color/coklat"
+
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="596dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="358dp"
+        android:layout_height="652dp"
+        app:srcCompat="@drawable/orang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="-134dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
