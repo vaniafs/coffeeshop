@@ -25,7 +25,7 @@ public class coshop_adapter extends RecyclerView.Adapter<coshop_adapter.ViewHold
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View view = layoutInflater.inflate(R.layout.coffeeshop_list, parent, false);
+        View view = layoutInflater.inflate(R.layout.activity_main, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
@@ -58,9 +58,9 @@ public class coshop_adapter extends RecyclerView.Adapter<coshop_adapter.ViewHold
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            coshopImg =  itemView.findViewById(R.id.imageview);
+            coshopImg =  itemView.findViewById(R.id.imageView);
             textViewName = itemView.findViewById(R.id.textName);
-            textViewLocate = itemView.findViewById(R.id.textLocation);
+            textViewLocate = itemView.findViewById(R.id.textLocate);
         }
     }
 

@@ -1,10 +1,6 @@
 package com.example.coffeekds;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {}
 
@@ -27,3 +23,4 @@ public class MainActivity extends AppCompatActivity {}
 //                new coshop_data("Coffeshop in Kudus", "Kudus",  R.drawable.jenderal),
 //    }
 //}
+
