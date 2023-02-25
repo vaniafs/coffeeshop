@@ -1,9 +1,350 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".card">
+    android:background="#C0C0C0"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_jenderal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/jenderal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_jenderal"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="11dp"
+                    android:text="Jenderal Coffee"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_jenderal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text=" Jl. Kyai H. Agus Salim No.170, Wergu Kulon"
+                    android:layout_below="@+id/iv_jenderal"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="action"
+                    android:backgroundTint="#8f9f5f"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/tv_jenderal"/>
+                <ImageView
+                    android:id="@+id/iv_favourite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/favourite"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_below="@id/tv_jenderal"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/share"
+                    android:layout_below="@id/tv_jenderal"
+                    android:layout_toLeftOf="@id/iv_favourite"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/card1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_oteng"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/oteng" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_oteng"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="11dp"
+                    android:text="Kopi oteng"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_oteng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Jl. Kyai H. Wahid Hasim No.41b, Magersari"
+                    android:layout_below="@+id/iv_oteng"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="action"
+                    android:backgroundTint="#8f9f5f"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/tv_oteng"/>
+                <ImageView
+                    android:id="@+id/iv_favourite3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/favourite"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_below="@id/tv_oteng"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/share"
+                    android:layout_below="@id/tv_oteng"
+                    android:layout_toLeftOf="@id/iv_favourite3"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/card2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_eagle"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/eagle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_eagle"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="11dp"
+                    android:text="Eagle Coffee"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_eagle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Jl. Veteran No.27b, Glantengan, Kec. Kota Kudus"
+                    android:layout_below="@+id/iv_eagle"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="action"
+                    android:backgroundTint="#8f9f5f"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/tv_eagle"/>
+                <ImageView
+                    android:id="@+id/iv_favourite4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/favourite"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_below="@id/tv_eagle"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/share"
+                    android:layout_below="@id/tv_eagle"
+                    android:layout_toLeftOf="@id/iv_favourite4"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/card3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_hilir"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hilir"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_hilir"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="11dp"
+                    android:text="Hilir Coffee"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_hilir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Jl. Candi Cluster No.21, Candi Lor, Singocandi"
+                    android:layout_below="@+id/iv_hilir"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="action"
+                    android:backgroundTint="#8f9f5f"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/tv_hilir"/>
+                <ImageView
+                    android:id="@+id/iv_favourite2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/favourite"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_below="@id/tv_hilir"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/share"
+                    android:layout_below="@id/tv_hilir"
+                    android:layout_toLeftOf="@id/iv_favourite2"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/card4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_halu"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/halu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_halu"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="11dp"
+                    android:text="Halu Coffee"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFF"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_halu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Jl. Nuri No.17, Wergu Kulon, Kec. Kota Kudus"
+                    android:layout_below="@+id/iv_halu"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="action"
+                    android:backgroundTint="#8f9f5f"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/tv_halu"/>
+                <ImageView
+                    android:id="@+id/iv_favourite5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/favourite"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_below="@id/tv_halu"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/share"
+                    android:layout_below="@id/tv_halu"
+                    android:layout_toLeftOf="@id/iv_favourite5"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
